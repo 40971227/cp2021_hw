@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='W1-1.html'>W1-1</a><li><a href='W1-2.html'>W1-2</a><li><a href='中文打字.html'>中文打字</a><li><a href='英文打字.html'>英文打字</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='run.html'>run</a></li></ul><li><a href='HW3.html'>HW3</a><li><a href='Final Project.html'>Final Project</a><li class='has-children'><a href='note.html'>note</a><ul class='dropdown'><li><a href='上課筆記.html'>上課筆記</a><li><a href='已解決問題.html'>已解決問題</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li><a href='TEXT.html'>TEXT</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='HW1-1.html'>HW1-1</a><li><a href='HW1-2.html'>HW1-2</a><li><a href='中文打字.html'>中文打字</a><li><a href='英文打字.html'>英文打字</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='run.html'>run</a></li></ul><li><a href='HW3.html'>HW3</a><li><a href='Final Project.html'>Final Project</a><li class='has-children'><a href='note.html'>note</a><ul class='dropdown'><li><a href='上課筆記.html'>上課筆記</a><li><a href='已解決問題.html'>已解決問題</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='W13.html'>W13</a></li></ul><li class='has-children'><a href='cp2021_final.html'>cp2021_final</a><ul class='dropdown'><li class='has-children'><a href='1bg7.html'>1bg7</a><ul class='dropdown'><li><a href='40971227.html'>40971227</a></li>
                       </ul>
                 </nav>
               </div>
@@ -139,7 +139,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">W1-1 << <a href='W1-1.html'>Previous</a> <a href='中文打字.html'>Next</a> >> 中文打字<br /><h1>W1-2</h1>
+    <div id="tipue_search_content">HW1-1 << <a href='HW1-1.html'>Previous</a> <a href='中文打字.html'>Next</a> >> 中文打字<br /><h1>HW1-2</h1>
 <p>第一種在網頁執行 Brython 程式的方法, 是使用者在網際程式編輯區輸入 Brython 程式碼, 必須手動按下 Run 才能執行.</p>
 <!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
@@ -189,7 +189,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/Tzm0306/cf96f2fe59f3b256ceb1459251ef7b21/raw/6894c8fb8db060e2e936feaf61a2bd9fd9429771/gistfile1.txt"
+        url = "https://gist.githubusercontent.com/smart-777/41948ac512cf4772fff1da23206837c6/raw/67db5df7551cd44751009524249a456637826a25/gistfile1.txt"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -222,7 +222,14 @@ run()
 <p></p>
 <!-- 程式執行 ouput 區 -->
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
-<br />W1-1 << <a href='W1-1.html'>Previous</a> <a href='中文打字.html'>Next</a> >> 中文打字</div>
+<!-- Brython 程式執行的結果, 都以 brython_div 作為切入位置 -->
+<div id="brython_div"></div>
+<!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="https://mde.tw/cp2021/cmsimde/static/Cango-24v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/gearUtils-09.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
+<br />HW1-1 << <a href='HW1-1.html'>Previous</a> <a href='中文打字.html'>Next</a> >> 中文打字</div>
         
     <!-- footer -->
       <div class="container">

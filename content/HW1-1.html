@@ -139,7 +139,8 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW2 << <a href='HW2.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3<br /><h1>run</h1>
+    <div id="tipue_search_content">HW1 << <a href='HW1.html'>Previous</a> <a href='HW1-2.html'>Next</a> >> HW1-2<br /><h1>HW1-1</h1>
+<p>第一種在網頁執行 Brython 程式的方法, 是使用者在網際程式編輯區輸入 Brython 程式碼, 必須手動按下 Run 才能執行.</p>
 <!-- 導入 brython 程式庫 -->
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
@@ -188,7 +189,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/mdecourse/e896a4705a95ac8cc4147b355b0e87ef/raw/8954b8280c524c5781dc3c0b3565bc489d3aa3a3/cango_gear1.py"
+        url = "https://gist.githubusercontent.com/smart-777/25e55498361d241b7c712b2f9a096db2/raw/6c27e0c0197b57cffcefb1d4785ae86d091af273/hw1"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -199,7 +200,7 @@ def run():
     #ns = {'__name__':'__main__'}
     #exec(prog, ns)
     # 按下 run 按鈕
-    Ace.run()
+    #Ace.run()
 
 # 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
 doc['kw_run'].bind('click', Ace.run)
@@ -229,7 +230,7 @@ run()
 <script src="https://mde.tw/cp2021/cmsimde/static/SVGpathUtils-6v03-min.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/sylvester.js"></script>
 <script src="https://mde.tw/cp2021/cmsimde/static/PrairieDraw.js"></script>
-<br />HW2 << <a href='HW2.html'>Previous</a> <a href='HW3.html'>Next</a> >> HW3</div>
+<br />HW1 << <a href='HW1.html'>Previous</a> <a href='HW1-2.html'>Next</a> >> HW1-2</div>
         
     <!-- footer -->
       <div class="container">
